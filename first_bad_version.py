@@ -10,4 +10,4 @@ def first_bad_version(n):
         else:
             start = mid + 1
     return start
-print(first_bad_version(23))
+print(first_bad_version(245))
