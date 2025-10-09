@@ -10,4 +10,4 @@ def armstrong_number(n):
         print("The number is an Armstrong number")
     else:
         print("The number is not an Armstrong number")
-armstrong_number(407)
+armstrong_number(101)
