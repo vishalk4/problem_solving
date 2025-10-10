@@ -9,4 +9,4 @@ def consonant_vowels(string):
             else:
                 consonant_count += 1
     return f"no.of vowels : {vowels_count}", f"no.of consonants : {consonant_count}"
-print(consonant_vowels("                         "))
+print(consonant_vowels("hello world"))
