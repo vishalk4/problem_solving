@@ -1,6 +1,6 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        s = []
+        stack = []
         # we use dictionary to map closing brackets to their corresponding opening brackets
         mapping = {')': '(','}': '{',']': '['}
         for char in s:
@@ -13,6 +13,6 @@ class Solution:
                 if mapping[char] != top:
                     return False 
             else:
-                s.append(char) # If it's an opening bracket, push it onto the s
+                stack.append(char) # If it's an opening bracket, push it onto the s
         # After completing all characters If s is empty all brackets matched correctly else some opening brackets were not closed
-        return not s
+        return not stack
