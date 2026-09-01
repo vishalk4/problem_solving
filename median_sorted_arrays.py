@@ -9,8 +9,7 @@ class Solution:
         while left <= right:
             # partition nums1
             partition1 = (left + right) // 2
-            # partition nums2
-            # total elements on the left side should be half
+            # partition nums2 total elements on the left side should be half
             partition2 = (m + n + 1) // 2 - partition1
             # elements just before and after the partitions
             # use -infinity / +infinity for boundary cases
